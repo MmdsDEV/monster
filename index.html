@@ -1,14 +1,113 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Programador Designer Pro</title>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arraiá dos Pauxis</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('Capa-Site-Arraia-dos-Pauxis-2023.png') no-repeat center top;
+      background-size: cover;
+      height: 100vh;
+      font-family: 'Arial', sans-serif;
+      overflow: hidden;
+    }
 
+    /* Animação da fogueira */
+    .fogueira {
+      position: absolute;
+      left: 80px;
+      bottom: 100px;
+      width: 60px;
+      height: 100px;
+      background: url('https://i.imgur.com/su1GvNj.gif') no-repeat center center;
+      background-size: contain;
+      animation: tremor 0.3s infinite;
+    }
+
+    @keyframes tremor {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-3px); }
+    }
+
+    /* Luzes dos cactos */
+    .cacto {
+      position: absolute;
+      width: 100px;
+      height: auto;
+      animation: brilho 1s infinite alternate;
+    }
+
+    .cacto.esquerda {
+      left: 0;
+      bottom: 50px;
+    }
+
+    .cacto.direita {
+      right: 0;
+      bottom: 50px;
+    }
+
+    @keyframes brilho {
+      0% { filter: brightness(1); }
+      100% { filter: brightness(1.6); }
+    }
+
+    /* Pipa animada */
+    .pipa {
+      position: absolute;
+      right: 150px;
+      top: 100px;
+      width: 50px;
+      animation: voar 4s ease-in-out infinite;
+    }
+
+    @keyframes voar {
+      0%, 100% { transform: translateY(0) rotate(0deg); }
+      50% { transform: translateY(-20px) rotate(10deg); }
+    }
+
+    /* Bandeirolas animadas */
+    .bandeirolas {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 50px;
+      background: url('https://i.imgur.com/nIDZ4GK.png') repeat-x;
+      animation: balanco 3s infinite ease-in-out;
+    }
+
+    @keyframes balanco {
+      0%, 100% { transform: rotate(0deg); }
+      50% { transform: rotate(1deg); }
+    }
+
+    /* Texto central com efeito */
+    .titulo {
+      position: absolute;
+      top: 35%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 48px;
+      color: #fff;
+      text-shadow: 2px 2px 6px #000;
+      animation: aparecer 2s ease-out forwards;
+    }
+
+    @keyframes aparecer {
+      0% { opacity: 0; transform: translate(-50%, -70%); }
+      100% { opacity: 1; transform: translate(-50%, -50%); }
+    }
+  </style>
 </head>
 <body>
-  <canvas id="canvas"></canvas>
-  <script  src="script.js"></script>
+  <div class="bandeirolas"></div>
+  <div class="titulo">Arraiá dos Pauxis</div>
+  <div class="fogueira"></div>
+  <img src="https://i.imgur.com/ZFMOgVq.png" class="cacto esquerda" alt="Cacto esquerdo" />
+  <img src="https://i.imgur.com/ZFMOgVq.png" class="cacto direita" alt="Cacto direito" />
+  <img src="https://i.imgur.com/gHVN2rP.png" class="pipa" alt="Pipa animada" />
 </body>
 </html>
