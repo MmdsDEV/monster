@@ -3,121 +3,83 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Arraiá dos Pauxis</title>
+  <title>Arraiá MJ 2025</title>
   <style>
     body {
+      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      background: url('Capa-Site-Arraia-dos-Pauxis-2023.png') no-repeat center top;
-      background-size: cover;
-      height: 100vh;
-      font-family: 'Arial', sans-serif;
-      color: #fff;
-      overflow: auto;
+      background: #fff9f0;
+      color: #333;
     }
 
-    .fogueira, .cacto, .pipa, .bandeirolas, .titulo {
-      pointer-events: none;
-    }
-
-    .titulo {
-      position: relative;
-      top: 50px;
+    header {
+      background: #ffcc00;
+      padding: 40px 20px;
       text-align: center;
-      font-size: 48px;
-      color: #fff;
-      text-shadow: 2px 2px 6px #000;
     }
 
-    .conteudo {
-      max-width: 800px;
-      margin: 150px auto 50px;
+    header h1 {
+      margin: 0;
+      font-size: 3em;
+    }
+
+    header p {
+      font-size: 1.5em;
+    }
+
+    section {
+      padding: 30px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    section h2 {
+      color: #c0392b;
+    }
+
+    .cotas {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .cota {
+      background: #ffe9c6;
       padding: 20px;
-      background-color: rgba(0, 0, 0, 0.6);
-      border-radius: 20px;
+      border-radius: 10px;
+      width: 200px;
+      text-align: center;
     }
 
-    h2 {
-      color: #ffd700;
-      margin-top: 20px;
+    footer {
+      background: #ffcc00;
+      text-align: center;
+      padding: 20px;
     }
-
-    .info {
-      font-size: 18px;
-      line-height: 1.6;
-    }
-
-    .cacto, .pipa, .fogueira, .bandeirolas {
-      position: absolute;
-      z-index: 0;
-    }
-
-    .fogueira {
-      left: 80px;
-      bottom: 100px;
-      width: 60px;
-      height: 100px;
-      background: url('https://i.imgur.com/su1GvNj.gif') no-repeat center;
-      background-size: contain;
-      animation: tremor 0.3s infinite;
-    }
-
-    .cacto.esquerda {
-      left: 0;
-      bottom: 50px;
-      width: 100px;
-      animation: brilho 1s infinite alternate;
-    }
-
-    .cacto.direita {
-      right: 0;
-      bottom: 50px;
-      width: 100px;
-      animation: brilho 1s infinite alternate;
-    }
-
-    .pipa {
-      right: 150px;
-      top: 100px;
-      width: 50px;
-      animation: voar 4s ease-in-out infinite;
-    }
-
-    .bandeirolas {
-      top: 0;
-      width: 100%;
-      height: 50px;
-      background: url('https://i.imgur.com/nIDZ4GK.png') repeat-x;
-      animation: balanco 3s infinite ease-in-out;
-    }
-
-    @keyframes tremor { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-3px); } }
-    @keyframes brilho { 0% { filter: brightness(1); } 100% { filter: brightness(1.6); } }
-    @keyframes voar { 0%, 100% { transform: translateY(0) rotate(0deg); } 50% { transform: translateY(-20px) rotate(10deg); } }
-    @keyframes balanco { 0%, 100% { transform: rotate(0deg); } 50% { transform: rotate(1deg); } }
   </style>
 </head>
 <body>
-  <div class="bandeirolas"></div>
-  <div class="titulo">Arraiá dos Pauxis</div>
-  <div class="fogueira"></div>
-  <img src="https://i.imgur.com/ZFMOgVq.png" class="cacto esquerda" alt="Cacto esquerdo" />
-  <img src="https://i.imgur.com/ZFMOgVq.png" class="cacto direita" alt="Cacto direito" />
-  <img src="https://i.imgur.com/gHVN2rP.png" class="pipa" alt="Pipa animada" />
 
-  <div class="conteudo">
-    <h2>Quem Somos</h2>
-    <p class="info">
-      Somos um grupo de oração que, desde 2017, busca trazer de volta para perto de Deus aqueles que estão distantes e, além disso, mostrar quem é Deus para aqueles que nunca experimentaram desse amor!
-    </p>
+  <header>
+    <h1>ARRAIÁ MJ</h1>
+    <p>28 JUN • 19:30</p>
+    <p>Movimento Jovem apresenta</p>
+  </header>
 
+  <section id="quem-somos">
+    <h2>Quem somos</h2>
+    <p>Somos um grupo de oração que, desde 2017, busca trazer de volta para perto de Deus aqueles que estão distantes e, além disso, mostrar quem é Deus para aqueles que nunca experimentaram desse amor!</p>
+  </section>
+
+  <section id="objetivos">
     <h2>Objetivos</h2>
-    <p class="info">
-      Toda a renda arrecadada com o nosso Arraiá será revertida para a realização do nosso Encontro, onde durante 3 dias, 50 jovens ficarão totalmente imersos no amor de Deus através de pregações, músicas, partilhas e momentos de espiritualidade.
-    </p>
+    <p>Toda a renda arrecadada com o nosso Arraiá será revertida para a realização do nosso Encontro, onde durante 3 dias, 50 jovens ficarão totalmente imersos ao amor de Deus, através de pregações, músicas, partilhas e momentos de espiritualidade.</p>
+  </section>
 
+  <section id="atracoes">
     <h2>Atrações 2025</h2>
-    <ul class="info">
+    <ul>
       <li>Show ao vivo</li>
       <li>Apresentação de quadrilha profissional</li>
       <li>Várias barraquinhas de comidas típicas</li>
@@ -125,27 +87,44 @@
       <li>Bingo</li>
       <li>Leilão</li>
     </ul>
+  </section>
 
+  <section id="visao">
     <h2>Visão do Arraiá 2024</h2>
-    <p class="info">No ano passado, tivemos mais de 300 pessoas presentes em nosso Arraiá.</p>
+    <p>No ano passado, tivemos mais de 300 pessoas presentes em nosso Arraiá.</p>
+  </section>
 
-    <h2>Cotas de Patrocínio</h2>
-    <ul class="info">
-      <li>R$100,00</li>
-      <li>R$200,00</li>
-      <li>R$300,00</li>
-    </ul>
+  <section id="patrocinio">
+    <h2>Investimento</h2>
+    <div class="cotas">
+      <div class="cota">
+        <h3>Cota de R$100</h3>
+      </div>
+      <div class="cota">
+        <h3>Cota de R$200</h3>
+      </div>
+      <div class="cota">
+        <h3>Cota de R$300</h3>
+      </div>
+    </div>
+  </section>
 
+  <section id="divulgacao">
     <h2>Divulgação</h2>
-    <p class="info">
-      Divulgação será feita pelo Instagram do Movimento Jovem e também pelos perfis dos 40 servos do grupo.<br>
-      <strong>Dados de alcance:</strong> maio/25
-    </p>
+    <p>A divulgação acontecerá pelo perfil do Instagram do Movimento Jovem e no Instagram dos Servos do grupo (40 pessoas).</p>
 
+    <h2>Alcance</h2>
+    <p>Dados de maio/25</p>
+  </section>
+
+  <section id="contato">
     <h2>Informações</h2>
-    <p class="info">
-      Wilian: (62) 9 9354-3798
-    </p>
-  </div>
+    <p>Wilian: (62) 9 9354-3798</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Arraiá MJ • Todos os direitos reservados</p>
+  </footer>
+
 </body>
 </html>
