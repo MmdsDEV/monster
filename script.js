@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", () => {
   const elements = document.querySelectorAll("section");
   elements.forEach((el, index) => {
